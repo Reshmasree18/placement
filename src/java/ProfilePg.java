@@ -129,6 +129,7 @@ public class ProfilePg extends HttpServlet {
 "      \n" +
 "    <a class=\"active\" href=\"Reset_Password.html\">Change Password</a> \n" +
 "    <a class=\"active\" href=\"StudUpdate\">Update Profile</a>\n" +
+"    <a class=\"active\" href=\"Questions.html\">Question Bank</a>\n" +               
 "    <a class=\"active\" href=\"placement.html\">Placement Details</a>\n" +
 "    <a class=\"active\" href=\"\">questions</a>\n" +
 "    <a class=\"active\" href=\"\">Logout</a>\n" +

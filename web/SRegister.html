@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <title>Registration </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            .content{
+width:960px;
+margin:20px auto
+}
+.main{
+float:left;
+width:50px;
+margin-top:50px
+}
+#progressbar{
+margin:0;
+padding:0;
+font-size:18px
+}
+#active1{
+color:red
+}
+fieldset{
+display:none;
+width:350px;
+padding:20px;
+margin-top:50px;
+margin-left:85px;
+border-radius:5px;
+box-shadow:3px 3px 25px 1px gray
+}
+#first{
+display:block;
+width:350px;
+padding:20px;
+margin-top:50px;
+border-radius:5px;
+margin-left:85px;
+box-shadow:3px 3px 25px 1px gray
+}
+input[type=text],input[type=password],select{
+width:100%;
+margin:10px 0;
+height:40px;
+padding:5px;
+border:3px solid #ecb0dc;
+border-radius:4px
+}
+
+input[type=submit],input[type=button]{
+width:120px;
+margin:15px 25px;
+padding:5px;
+height:40px;
+background-color:#a0522d;
+border:none;
+border-radius:4px;
+color:#fff;
+font-family:'Droid Serif',serif
+}
+h2,p{
+text-align:center;
+font-family:'Droid Serif',serif
+}
+li{
+margin-right:52px;
+display:inline;
+color:#c1c5cc;
+font-family:'Droid Serif',serif
+}
+            
+        </style>
+         <script type="text/javascript">
+ function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}  
+      
+ function validate(){
+var num=document.myform.num.value;
+if (isNaN(num)){
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";
+  return false;
+}else{
+  return true;
+  }
+}
+
+function validateemail()  
+{  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}  
+
+function matchpass(){
+var firstpassword=document.f1.password.value;
+var secondpassword=document.f1.password2.value;
+
+if(firstpassword==secondpassword){
+return true;
+}
+else{
+alert("password must be same!");
+return false;
+}
+}
+</script>
+        
+
+      
+</head>
+<body>
+<div class="content">
+<div class="main">
+
+<form action="SRegisters" method="POST">
+    <center>
+        <ul id="progressbar">
+        <li id="active1">Student Registration</li>
+        </ul>
+    </center>  
+
+    
+
+<fieldset id="first">
+<h2 class="title">Create your account</h2>
+
+
+<select class="options" name="course">
+<option>--Select Course--</option>
+  
+  <option value="B.Sc.(Visual Media)">B. Sc. (Visual Media)</option>
+  <option value="B.B.A.(Logistics Management)">B. B. A. (Logistics Management)</option>
+  <option value="B.Com.(Finance and I.T.)">B. Com. (Finance and I.T.)</option>
+  <option value="B.Com.(Taxation and Finance)">B. Com. (Taxation and Finance)</option>
+  <option value="B.F.A.(Photography)">B.F.A. (Photography)</option>
+  <option value="B.F.A.(Painting)">B.F.A. (Painting)</option>
+  
+  <option value="M.C.A.[Lateral Entry to IInd Year]">M.C.A. [Lateral Entry to IInd Year]</option>
+  <option value="M.A.(English Language and Literature)">M.A. (English Language and Literature)</option>
+  <option value="M. Com. (Finance and Systems)">M. Com. (Finance and Systems)</option>
+  <option value="M.Sc.Mathematics">M.Sc. Mathematics</option>
+  <option value="M.A. Journalism and Mass Communication">M.A. Journalism and Mass Communication
+ [Specialisation: Video Production and Broadcasting]</option>
+  <option value="M.A.Visual Media and Communication">M.A. Visual Media and Communication </option>
+  <option value="M.A.Visual Media and Communication">M.A. Visual Media and Communication</option>
+  <option value="M.F.A.(Visual Media)-Animation and Content Management">M.F.A. (Visual Media) - Animation and Content Management</option>
+  <option value="M.F.A.(Visual Media)-Digital Film Making">M.F.A. (Visual Media) - Digital Film Making</option>
+  <option value="M.F.A.(Visual Media)-Applied Art and Advertising">M.F.A. (Visual Media) - Applied Art and Advertising</option>
+ 
+
+  <option value="Integrated B.C.A-M.C.A">Integrated B.C.A. - M.C.A.</option>
+  <option value="Integrated B.Sc-M.Sc">Integrated B.Sc. - M.Sc.</option>
+  <option value="Integrated B.A-M.A(English Language and Literature)">Integrated B.A. - M.A. (English Language and Literature)</option>
+  
+</select>
+    
+    <input class="text_field" name="RegistrationID" placeholder="Registration_ID" type="text" value="" required>
+    <input class="text_field" name="fname" placeholder="First Name" type="text" value="" onsubmit="return validateForm()" required>
+    <input class="text_field" name="lname" placeholder="Last Name" type="text" value="" required>
+  
+    
+    <label>Gender</label>
+<input name="gender" required type="radio" value="Male">Male
+<input name="gender"  required type="radio" value="Female">Female
+
+<input class="text_field" name="email" placeholder="Email" type="text" value=""  onsubmit="return validateemail();" required>
+<form name="myform" onsubmit="return validate()" >
+    <input class="text_field" type="text" name="Mobile_Number" placeholder="Phone (valid Indian Phone Number)" required=""pattern="[789][0-9]{9}">
+    <!--<input type="text" name="HS_Marks" maxlength="30" required>-->
+<!----- Qualification---------------------------------------------------------->
+
+<lable>QUALIFICATION</lable> <br /><br>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Percentage</b></td>
+</tr>
+ 
+<!--<tr>
+<td>1</td>
+<td>Class X</td>
+
+<td><input type="text" name="HS_Marks" maxlength="30" required /></td>
+
+</tr>-->
+
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="HS_Marks" maxlength="30" required /></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="HSS_Marks" maxlength="30" required /></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="UG_Marks" maxlength="30" required/></td>
+</tr>
+ 
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text" name="PG_Marks" maxlength="30" /></td>
+</tr>
+ 
+</table>
+ <!--<form name="f1" onsubmit="return matchpass()">-->
+ <input type="password"  name="PASS" placeholder="password" onsubmit="return matchpass()" required>
+
+<input class="text_field" name="cpass" placeholder="Confirm Password" type="password" required>
+ 
+    <input  type="button" value="Clear">
+    <input class="submit_btn"  type="submit" value="Submit">
+</fieldset>
+    
+</form>
+</div>
+</div>
+</body>
+</html>

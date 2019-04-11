@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>faculty registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            .content{
+width:960px;
+margin:20px auto
+}
+.main{
+float:left;
+width:650px;
+margin-top:80px
+}
+#progressbar{
+position:center;    
+margin:0;
+padding:0;
+font-size:18px
+}
+#active1{
+color:red
+}
+fieldset{
+display:none;
+width:350px;
+padding:20px;
+margin-top:50px;
+margin-left:85px;
+border-radius:5px;
+box-shadow:3px 3px 25px 1px gray
+}
+#first{
+display:block;
+width:350px;
+padding:20px;
+margin-top:50px;
+border-radius:5px;
+margin-left:85px;
+box-shadow:3px 3px 25px 1px gray
+}
+input[type=text],input[type=password],select{
+width:100%;
+margin:10px 0;
+height:40px;
+padding:5px;
+border:3px solid #ecb0dc;
+border-radius:4px
+}
+
+input[type=submit],input[type=button]{
+width:120px;
+margin:15px 25px;
+padding:5px;
+height:40px;
+background-color:#a0522d;
+border:none;
+border-radius:4px;
+color:#fff;
+font-family:'Droid Serif',serif
+}
+h2,p{
+text-align:center;
+font-family:'Droid Serif',serif
+}
+li{
+margin-right:52px;
+display:inline;
+color:#c1c5cc;
+font-family:'Droid Serif',serif
+}
+            
+        </style>
+
+
+      
+</head>
+<body>
+<div class="content">
+<div class="main">
+
+<form action="FRegisters" method="POST">
+    
+
+    
+
+<fieldset id="first">
+<h2 class="title">Create your account</h2>
+
+
+<select class="options" name="dept">
+<option>--Select Department--</option>
+  
+  <option value="Computer Science and I.T."> Computer Science and I.T.</option>
+  <option value="Commerce and Management">Commerce and Management</option>
+  <option value="Visual Media and Communication"> Visual Media and Communication</option>
+  <option value="English and Languages ">English and Languages </option>
+  <option value="Mathematics">Mathematics </option>
+  <option value="Library and Information Science">Library and Information Science </option>
+  <option value="Corporate and Industry Relations(CIR)">Corporate and Industry Relations(CIR)</option>
+</select>
+
+<input class="text_field" name="fid" placeholder="Faculty_Id" type="text" value="">
+<input class="text_field" name="fname" placeholder="First Name" type="text">
+<input class="text_field" name="lname" placeholder="Last Name" type="text">
+<input class="text_field" name="email" placeholder="Email" type="text" value="">
+<input class="text_field" name="Mobile_Number" maxlength="10"  placeholder="Mobile_Number" type="text" value="">
+<label>Gender</label>
+<input name="gender" type="radio" value="Male">Male
+<input name="gender" type="radio" value="Female">Female
+<input class="text_field" name="pass" placeholder="Password" type="password" value="">
+<input class="text_field" name="cpass" placeholder="Confirm Password" type="password" value="">
+
+<input  type="button" value="Clear">
+<input class="submit_btn" type="submit" value="Submit">
+</fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>

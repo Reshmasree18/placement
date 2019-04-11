@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>faculty registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            .content{
+width:960px;
+margin:20px auto
+}
+.main{
+float:left;
+width:650px;
+margin-top:80px
+}
+
+#active1{
+color:red
+}
+
+textarea{
+width:100%;
+margin:10px 0;
+height:70px;
+padding:5px;
+border:3px solid #ecb0dc;
+border-radius:4px
+}
+
+fieldset{
+display:none;
+width:350px;
+padding:20px;
+margin-top:50px;
+margin-left:85px;
+border-radius:5px;
+box-shadow:3px 3px 25px 1px gray
+}
+#first{
+display:block;
+width:350px;
+padding:20px;
+margin-top:50px;
+border-radius:5px;
+margin-left:85px;
+box-shadow:3px 3px 25px 1px gray
+}
+input[type=text],input[type=password],select{
+width:100%;
+margin:10px 0;
+height:40px;
+padding:5px;
+border:3px solid #ecb0dc;
+border-radius:4px
+}
+
+input[type=submit],input[type=button]{
+width:120px;
+margin:15px 25px;
+padding:5px;
+height:40px;
+background-color:#a0522d;
+border:none;
+border-radius:4px;
+color:#fff;
+font-family:'Droid Serif',serif
+}
+h2,p{
+text-align:center;
+font-family:'Droid Serif',serif
+}
+        
+        </style>
+
+
+      
+</head>
+<body>
+<div class="content">
+<div class="main">
+
+<form action="FRegisters" method="POST">
+    
+
+    
+
+<fieldset id="first">
+<h2 class="title">EDIT QUESTION HERE</h2>
+
+
+
+
+<input class="text_field" name="testid" placeholder="TEST_ID" type="text" value="">
+<input class="text_field" name="questionid" placeholder="QUESTION_ID" type="text" value="">
+<textarea name="question" placeholder="QUESTION">
+</textarea>
+<input class="text_field" name="option 1" placeholder="OPTION 1" type="text">
+<input class="text_field" name="option 2" placeholder="OPTION 2" type="text">
+<input class="text_field" name="option 3" placeholder="OPTION 3" type="text">
+<input class="text_field" name="option 4" placeholder="OPTION 4" type="text">
+<input class="text_field" name="answer" placeholder="ANSWER" type="text">
+
+<input  type="button" value="Clear">
+<input class="submit_btn" type="submit" value="Submit">
+</fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>
