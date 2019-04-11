@@ -77,7 +77,7 @@ public class QBView extends HttpServlet {
                     String ans = rs.getString("MobileNumber");
                     
                    
-                    String psw = rs.getString("Password");
+                    String psw = rs.getString("Password");  
                     
                     out.println("<tr align=center>"+"<td>"+TESTID+"<td width='20%'>"+QID+"<td width='20%'>"+Question+"<td>"+Option1+"<td>"+option2+"<td>"+option3+"<td>"+option4+"<td>"+ans+"</tr>");
                                  
