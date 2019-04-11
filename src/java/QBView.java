@@ -74,7 +74,7 @@ public class QBView extends HttpServlet {
                     String option2= rs.getString("Gender");
                     String option3= rs.getString("Email");
                     String option4 = rs.getString("MobileNumber");
-                    String ans = rs.getString("MobileNumber");
+                    String ans = rs.getString("MobileNumber");  
                     
                    
                     String psw = rs.getString("Password");  
